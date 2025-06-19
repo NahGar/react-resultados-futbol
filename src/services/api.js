@@ -78,7 +78,7 @@ const cleanOldCache = () => {
         if (now - cached.timestamp > oneDay) {
           localStorage.removeItem(key);
         }
-      } catch (e) { // eslint-disable-line no-unused-vars
+      } catch (e) { 
         localStorage.removeItem(key);
       }
     }
